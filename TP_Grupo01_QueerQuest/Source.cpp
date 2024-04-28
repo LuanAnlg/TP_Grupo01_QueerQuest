@@ -9,7 +9,7 @@ int main() {
     // DECLARAMOS E INICIALIZAMOS NUESTRO OBJETO INTERFAZ
     Interfaz* queerQuest = new Interfaz();
     // LLAMAMOS A LA FUNCION INTERFAZ
-    queerQuest->interfaz();
+    queerQuest->menu();
     // BORRAMOS EL OBJETO
     delete queerQuest;
     // TERMINAMOS :)

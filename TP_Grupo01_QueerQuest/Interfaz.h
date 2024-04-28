@@ -108,7 +108,7 @@ private:
 		System::Console::SetCursorPosition(36, 11); std::cout << "                   ----- CREDITOS -----";
 		System::Console::SetCursorPosition(36, 13); std::cout << "Almeida Aguilar, Ivan Almeida: +51 992 165 689";
 		System::Console::SetCursorPosition(36, 15); std::cout << "Rafael Sosa, Mariana Alexa: @la._mars";
-		System::Console::SetCursorPosition(36, 17); std::cout << "Montoya Torres, Alexander Gabriel: ";
+		System::Console::SetCursorPosition(36, 17); std::cout << "Montoya Torres, Alexander Gabriel";
 
 		System::Console::SetCursorPosition(39, 28); std::cout << "Presione cualquier tecla para continuar";
 
@@ -143,7 +143,7 @@ public:
 		delete juego;
 	}
 
-	void interfaz() { // FUNCION DEL MENU
+	void menu() { // FUNCION DEL MENU
 		while (true) {
 			System::Console::SetCursorPosition(32, 8); std::cout << "  ___                        ___                  _";
 			System::Console::SetCursorPosition(32, 9); std::cout << " / _ \\ _   _  ___  ___ _ __ / _ \\ _   _  ___  ___| |_";
