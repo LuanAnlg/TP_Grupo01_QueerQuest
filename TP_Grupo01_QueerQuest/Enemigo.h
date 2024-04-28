@@ -10,7 +10,7 @@ private:
 
 	short tipo; // TIPO DE PERSONAJE
 
-	void setEnemigo() { // FUNCION SETEADORA AUTOMATICA PRIVADA PARA NO DUPLICAR CODIGO
+	void resetEnemigo() { // FUNCION SETEADORA AUTOMATICA PRIVADA PARA NO DUPLICAR CODIGO
 
 		tipo = aleatorio(0, 2); // ASIGNACION ALEATORIA DE TIPO
 		//SETEAMOS LOS PUNTOS, USAMOS SOLO SETEADORES PARA APOYAR AL ENCAPSULAMIENTO
@@ -46,14 +46,14 @@ public:
 
 	Enemigo() { // INICIALIZAMOS EL CONSTRUCTOR CON LA FUNCION SETEADOR AUTOMATICO
 
-		setEnemigo();
+		resetEnemigo();
 	}
 
 	~Enemigo() {} // INICIALIZAMOS NUESTRO DESTRUCTOR
 
 	void reposicionar() { // REPOSICIONAMOS CON LA FUNCION SETEADOR AUTOMATICO
 
-		setEnemigo();
+		resetEnemigo();
 	}
 
 	short getTipo() const { return tipo; } // GET DEL TIPO DE ENEMIGO
