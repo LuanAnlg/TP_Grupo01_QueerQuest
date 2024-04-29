@@ -1,7 +1,7 @@
 #include <iostream>
-
+// LLAMAMOS A NUESTRA CLASE INTERFAZ
 #include "Interfaz.h"
-
+// SETAMOS LA FUNCION MAIN
 int main() {
     // SETAMOS ALGUNAS CONFIGURACIONES
     std::srand(time(NULL));
