@@ -78,25 +78,24 @@ private:
 		System::Console::SetCursorPosition(14, 14); std::cout << "           pregunta.";
 		System::Console::SetCursorPosition(14, 16); std::cout << AZUL << "Perderas si:";
 		System::Console::SetCursorPosition(14, 17); std::cout << VIOLETA << "* respondes incorrectamente.";
-		System::Console::SetCursorPosition(14, 18); std::cout << "* Si no responde dentro de los";
-		System::Console::SetCursorPosition(14, 19); std::cout << "* no cuentas con aliados para";
-		System::Console::SetCursorPosition(14, 20); std::cout << "  sacrificar y selecionas la";
-		System::Console::SetCursorPosition(14, 21); std::cout << "  respuesta 'R'.";
-		System::Console::SetCursorPosition(14, 22); std::cout << "* Si no responde dentro de los";
-		System::Console::SetCursorPosition(14, 23); std::cout << "  30 segundos." << REINICIO;
+		System::Console::SetCursorPosition(14, 18); std::cout << "* no cuentas con aliados para";
+		System::Console::SetCursorPosition(14, 19); std::cout << "  sacrificar y selecionas la";
+		System::Console::SetCursorPosition(14, 20); std::cout << "  respuesta 'R'.";
+		System::Console::SetCursorPosition(14, 21); std::cout << "* no responde dentro de los";
+		System::Console::SetCursorPosition(14, 22); std::cout << "  60 segundos." << REINICIO;
 
-		System::Console::SetCursorPosition(74, 7); std::cout << ROJO << "Al finas de cada una se te dara";
+		System::Console::SetCursorPosition(74, 7); std::cout << ROJO << "Al final de cada una se te dara";
 		System::Console::SetCursorPosition(74, 8); std::cout << "una pequena explicacion.";
 		System::Console::SetCursorPosition(74, 10); std::cout << NARANJA << "Hay hasta 30 preguntas diferentes.";
-		System::Console::SetCursorPosition(74, 11); std::cout << "Cuando las termines la partida";
-		System::Console::SetCursorPosition(74, 12); std::cout << AMARILLO << "se te dara la cantidad de puntos";
-		System::Console::SetCursorPosition(74, 13); std::cout << "que obtuviste basado en la";
-		System::Console::SetCursorPosition(74, 14); std::cout << VERDE << "cantidad de aliados que lograste";
-		System::Console::SetCursorPosition(74, 15); std::cout << "obtener.";
-		System::Console::SetCursorPosition(74, 17); std::cout << AZUL << "            SUERTE!";
-		System::Console::SetCursorPosition(74, 19); std::cout << VIOLETA << "             !___!";
-		System::Console::SetCursorPosition(74, 20); std::cout << "             |^v^|";
-		System::Console::SetCursorPosition(74, 21); std::cout << "              \\+/" << REINICIO;
+		System::Console::SetCursorPosition(74, 12); std::cout << "Cuando las termines la partida";
+		System::Console::SetCursorPosition(74, 13); std::cout << AMARILLO << "se te dara la cantidad de puntos";
+		System::Console::SetCursorPosition(74, 14); std::cout << "que obtuviste basado en la";
+		System::Console::SetCursorPosition(74, 15); std::cout << VERDE << "cantidad de aliados que lograste";
+		System::Console::SetCursorPosition(74, 16); std::cout << "obtener.";
+		System::Console::SetCursorPosition(74, 18); std::cout << AZUL << "            SUERTE!";
+		System::Console::SetCursorPosition(74, 20); std::cout << VIOLETA << "             !___!";
+		System::Console::SetCursorPosition(74, 21); std::cout << "             |^v^|";
+		System::Console::SetCursorPosition(74, 22); std::cout << "              \\+/" << REINICIO;
 
 		System::Console::SetCursorPosition(39, 28); std::cout << "Presione cualquier tecla para continuar";
 
@@ -106,7 +105,7 @@ private:
 
 	void creditos() { // FUNCION PRIVADA CREDITOS
 		System::Console::SetCursorPosition(36, 11); std::cout << "                   ----- CREDITOS -----";
-		System::Console::SetCursorPosition(36, 13); std::cout << "Almeida Aguilar, Ivan Almeida: +51 992 165 689";
+		System::Console::SetCursorPosition(36, 13); std::cout << "Almeida Aguilar, Ivan Antonio: +51 992 165 689";
 		System::Console::SetCursorPosition(36, 15); std::cout << "Rafael Sosa, Mariana Alexa: @la._mars";
 		System::Console::SetCursorPosition(36, 17); std::cout << "Montoya Torres, Alexander Gabriel";
 
