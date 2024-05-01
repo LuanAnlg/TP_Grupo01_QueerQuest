@@ -20,7 +20,7 @@ private:
 		do {
 			System::Console::SetCursorPosition(39, 28); std::cout << "Ingrese respuesta y presione [<|](enter).";
 			System::Console::SetCursorPosition(40, 14); std::cout << VERDE << "CANTAIDAD DE PREGUNTAS A JUGAR (1 - 30): ";
-			std::cin >> preguntas;
+			System::Console::SetCursorPosition(59, 15); std::cin >> preguntas;
 			std::cout << REINICIO;
 			system("cls");
 		} while ((preguntas < 1 || preguntas > 30));
