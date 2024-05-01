@@ -3,7 +3,7 @@
 #include "Grupo.h"
 #include "Enemigo.h"
 #include "Trivia.h"
-
+// DECLARAMOS NUESTRA NUEVA CLASE
 class Logica {
 
 private:

@@ -3,7 +3,7 @@
 #include "Encabezado.h"
 // DEFINIMOS UN TEXTO MUY REPETIDO
 #define R "R) Saltar (descartar un aliado)."
-
+// DECLARAMOS NUESTRA NUEVA CLASE
 class Pregunta {
 
 private:
