@@ -124,7 +124,6 @@ private:
 		System::Console::SetCursorPosition(55, 15); std::cout << " |^v^|";
 		System::Console::SetCursorPosition(55, 16); std::cout << "  \\+/" << REINICIO;
 
-
 		System::Console::SetCursorPosition(39, 28); std::cout << "Presione cualquier tecla para terminar";
 
 		system("pause>0");
