@@ -99,6 +99,7 @@ private:
 
         grupo->mover(dx, dy);
     }
+
     void renderizar() { // FUNCION PRIVADA RENDERIZADO DE LA PANTALLA
 
         System::Console::SetCursorPosition(1, 1); std::cout << "PUNTAJE: " << grupo->getAliados() * 100;
