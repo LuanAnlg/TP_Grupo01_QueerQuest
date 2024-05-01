@@ -6,11 +6,9 @@
 #include <windows.h>
 #include <string>
 #include <conio.h>
-
 // DEFINICION DE LOS LIMITES DE LA PANTALLA POR DEFECTO
 #define VX 119
 #define VY 29
-
 // DEFINICION DE LOS COLORES EN CONSOLA
 #define REINICIO     "\033[0m"
 #define BLANCO       "\033[0m"
@@ -21,13 +19,11 @@
 #define AZUL         "\033[34m"
 #define VIOLETA      "\033[35m" 
 #define GRIS         "\033[90m"
-
 // FUNCION PARA GENERAR NUMERO ALEATORIOS
 short aleatorio(short min, short max) {
 
 	return min + std::rand() % (max - min + 1);
 }
-
 // ESTRUCTURA PARA DECLARAR SPRITES CON STRINGS
 struct sprite {
 
@@ -37,7 +33,6 @@ struct sprite {
 	std::string l3 = "     ";
 	std::string r = REINICIO;
 };
-
 // FUNCION SWITCH PARA SELECCIONAR LOS COLORES
 std::string color(short c) {
 

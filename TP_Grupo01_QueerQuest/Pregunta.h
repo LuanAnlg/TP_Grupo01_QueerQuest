@@ -14,7 +14,6 @@ private:
 
 public:
 
-
 	~Pregunta() {} // INICIALIZAMOS NUESTRO DESTRUCTOR
 
 	char getRespuesta() const { return r; } // GET DE LA RESPUESTA

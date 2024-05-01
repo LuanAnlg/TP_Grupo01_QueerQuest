@@ -35,6 +35,7 @@ private:
 	}
 
 	void tutorial() { // FUNCION PRIVADA TUTORIAL INTERACTIVO
+
 		System::Console::SetCursorPosition(14, 8); std::cout << ROJO << "              ^";
 		System::Console::SetCursorPosition(14, 9); std::cout << "              |";
 		System::Console::SetCursorPosition(14, 10); std::cout << NARANJA << "             [W]";
@@ -104,6 +105,7 @@ private:
 	}
 
 	void creditos() { // FUNCION PRIVADA CREDITOS
+
 		System::Console::SetCursorPosition(36, 11); std::cout << "                   ----- CREDITOS -----";
 		System::Console::SetCursorPosition(36, 13); std::cout << "Almeida Aguilar, Ivan Antonio: +51 992 165 689";
 		System::Console::SetCursorPosition(36, 15); std::cout << "Rafael Sosa, Mariana Alexa: @la._mars";
@@ -143,7 +145,9 @@ public:
 	}
 
 	void menu() { // FUNCION DEL MENU
+
 		while (true) {
+
 			System::Console::SetCursorPosition(32, 8); std::cout << "  ___                        ___                  _";
 			System::Console::SetCursorPosition(32, 9); std::cout << " / _ \\ _   _  ___  ___ _ __ / _ \\ _   _  ___  ___| |_";
 			System::Console::SetCursorPosition(32, 10); std::cout << "| | | | | | |/ _ \\/ _ \\ '__| | | | | | |/ _ \\/ __| __|";
@@ -163,18 +167,18 @@ public:
 				case 'S':
 					if (opcion == 3) opcion = 0; else opcion++; break;
 				case ' ':
+
 					system("cls");
 					switch (opcion) {
-					case 0: jugar(); break;
+					case 0: jugar();    break;
 					case 1: tutorial(); break;
 					case 2: creditos(); break;
-					case 3: salir(); break;
-					default:
-						break;
+					case 3: salir();    break;
+					default:            break;
 					}
 					break;
-				default:
-					break;
+
+				default: break;
 				}
 			}
 			System::Console::SetCursorPosition(54, 15 + (opcion * 2)); std::cout << ">";
