@@ -20,6 +20,7 @@ public:
                              //(LE DAMOS VALOR A pt CON EL ARGUMENTO cantidad)
         vecPreguntas = new std::vector<Pregunta*>;
         noRepetir = new std::vector<bool>;
+
         for (int p = 0; p < 30; p++) {
             vecPreguntas->push_back(new Pregunta(p));
         }
@@ -53,7 +54,7 @@ public:
             do {
                 ip = aleatorio(0, 29);
             } while (noRepetir->at(ip));
-
+            std::cout << ip;
             for (int t = 60; t > 0; t--) {
                 vecPreguntas->at(ip)->imprimirPregunta();
                 Beep(1000, 100);
@@ -85,7 +86,6 @@ public:
             vecPreguntas->at(ip)->imprimirRespuesta();
             system("pause>0");
             system("cls");
-            vecPreguntas->erase(vecPreguntas->begin() + ip);
             noRepetir->at(ip) = 1;
             pt--;
         }

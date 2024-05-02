@@ -72,15 +72,19 @@ public:
 		// TELETRANSPORTAMOS AL GRUPO SI LLEGA A UN LIMITE
 		if (vecGrupo->at(0)->getY1() < 0) {
 			vecGrupo->at(0)->setY1(VY - 2);
+			vecGrupo->at(0)->setY2(vecGrupo->at(0)->getY1() + 2);
 		}
 		if (vecGrupo->at(0)->getY2() > VY) {
 			vecGrupo->at(0)->setY1(0);
+			vecGrupo->at(0)->setY2(vecGrupo->at(0)->getY1() + 2);
 		}
 		if (vecGrupo->at(0)->getX1() < 0) {
 			vecGrupo->at(0)->setX1(VX - 4);
+			vecGrupo->at(0)->setX2(vecGrupo->at(0)->getX1() + 4);
 		}
 		if (vecGrupo->at(0)->getX2() > VX) {
 			vecGrupo->at(0)->setX1(0);
+			vecGrupo->at(0)->setX2(vecGrupo->at(0)->getX1() + 4);
 		}
 	}
 
