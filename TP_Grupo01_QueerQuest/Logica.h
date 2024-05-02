@@ -142,6 +142,8 @@ public:
             renderizar();
             reproducir(musica); // TAMBIEN SIVE COMO SLEEP
         }
+
         return grupo->getAliados() * 100; // RETORNAMOS LOS PUNTOS
+
     }
 };
