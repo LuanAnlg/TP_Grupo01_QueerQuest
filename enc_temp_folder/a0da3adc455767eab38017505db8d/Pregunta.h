@@ -367,7 +367,7 @@ public:
 			r = 'W';
 
 			ip[1] = "Por que es importante respetar y utilizar los pronombres preferidos de";
-			ip[2] = "una persona?";
+			ip[2] = "una persona segun lo enfatizado en el modulo?";
 			ip[3] = ROJO;
 			ip[4] = "Q)Porque no importa que pronombres se utilicen, todos son igualmente";
 			ip[5] = "validos.";
@@ -607,7 +607,7 @@ public:
 
 		case 24:
 
-			r = 'W';
+			r = 'Q';
 
 			ip[1] = "Cual es el termino correcto para referirse a una persona cuya";
 			ip[2] = "identidad de genero no se ajusta a las expectativas tradicionales de";
