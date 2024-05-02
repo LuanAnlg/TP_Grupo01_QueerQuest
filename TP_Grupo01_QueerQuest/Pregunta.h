@@ -39,14 +39,14 @@ public:
 		ip.resize(18); // INICIAMOS ELVECTORE PREGUNTA CON UN TAMANO 18
 		ir.resize(10); // INICIAMOS ELVECTORE PREGUNTA CON UN TAMANO 10
 
-		for (int i = 1; i < 17; i++) { // RELLENAMOS EL VECTOR CON ESPACIOS VACIOS
+		for (int i = 0; i < 17; i++) { // RELLENAMOS EL VECTOR CON ESPACIOS VACIOS
 			ip[i] = " ";
 		}
 		ip[0] = BLANCO; // LE DAMOS A LA PRIMERA LINEA EL COLOR BRALNCO
 		ip[17] = REINICIO; // REINICIAMOS LOS COLORES
 
-		for (int i = 1; i < 9; i++) { // RELLENAMOS EL VECTOR CON ESPACIOS VACIOS
-			ip[i] = " ";
+		for (int i = 0; i < 9; i++) { // RELLENAMOS EL VECTOR CON ESPACIOS VACIOS
+			ir[i] = " ";
 		}
 		ir[0] = VERDE; // LE DAMOS A TODOS EL TEXTO EL COLOR VERDE
 		ir[8] = "Presione cualquier tecla para continuar";
@@ -703,7 +703,7 @@ public:
 
 		case 28:
 
-			r = 'A';
+			r = 'Q';
 
 			ip[1] = "Cual es el termino utilizado para describir el proceso de revelar o";
 			ip[2] = "compartir la identidad de genero o la orientacion sexual de una persona";
