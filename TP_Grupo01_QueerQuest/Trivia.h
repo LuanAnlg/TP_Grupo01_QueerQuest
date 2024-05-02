@@ -37,11 +37,9 @@ public:
 
     short preguntar() { // FUNCION PREGUNTAR
 
-        pt--;
-
         short r = -1;
 
-        if (pt >= 0) {
+        if (pt > 0) {
             short ip = aleatorio(0, 29);
 
             for (int t = 60; t > 0; t--) {
@@ -77,6 +75,9 @@ public:
             system("cls");
             vecPreguntas->erase(vecPreguntas->begin() + ip);
         }
+
+        pt--;
+
         return r;
     }
 
