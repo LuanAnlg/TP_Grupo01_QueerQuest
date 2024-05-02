@@ -40,7 +40,7 @@ public:
         short r = -1;
 
         if (pt > 0) {
-            short ip = aleatorio(0, 29);
+            short ip = aleatorio(0, pt - 1);
 
             for (int t = 60; t > 0; t--) {
                 vecPreguntas->at(ip)->imprimirPregunta();
