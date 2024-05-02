@@ -10,6 +10,7 @@ private:
 
     short pt; // CANTIDAD DE pREGUNTAS DE LA tRIVIA
     char tecla; // TECLA DE INPUT
+    short random; // LIMITE DE RANDOM
     // DECLARAMOS UN VECTOR DE PUNTEROS TIPO PREGUNTA
     std::vector<Pregunta*>* vecPreguntas;
 
@@ -24,6 +25,7 @@ public:
         }
 
         pt = cantidad;
+        random = 29;
     }
 
     ~Trivia() { // DESTRUCTOR CON ITERACION
@@ -40,7 +42,7 @@ public:
         short r = -1;
 
         if (pt > 0) {
-            short ip = aleatorio(0, pt - 1);
+            short ip = aleatorio(0, random);
 
             for (int t = 60; t > 0; t--) {
                 vecPreguntas->at(ip)->imprimirPregunta();
@@ -77,7 +79,7 @@ public:
         }
 
         pt--;
-
+        random--;
         return r;
     }
 
