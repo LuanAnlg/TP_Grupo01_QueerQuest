@@ -71,7 +71,6 @@ private:
 
         if (trivia->getPreguntas() == 0) { // SI YA NO HAY PREGUNTAS, YA NO SE CONTINUA
             c = false;
-            return;
         }
 
         if (AABBcolision(grupo->getProtagonista(), enemigo)) {
