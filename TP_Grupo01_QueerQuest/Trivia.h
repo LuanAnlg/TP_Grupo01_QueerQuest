@@ -54,7 +54,7 @@ public:
             do {
                 ip = aleatorio(0, 29);
             } while (noRepetir->at(ip));
-            std::cout << ip;
+
             for (int t = 60; t > 0; t--) {
                 vecPreguntas->at(ip)->imprimirPregunta();
                 Beep(1000, 100);
