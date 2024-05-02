@@ -32,7 +32,6 @@ public:
         }
 
         pt = cantidad;
-        random = 29;
     }
 
     ~Trivia() { // DESTRUCTOR CON ITERACION
@@ -43,9 +42,6 @@ public:
         vecPreguntas->clear();
         delete vecPreguntas;
 
-        for (int i = 0; i < noRepetir->size(); ++i) {
-            delete noRepetir->at(i);
-        }
         noRepetir->clear();
         delete noRepetir;
     }
