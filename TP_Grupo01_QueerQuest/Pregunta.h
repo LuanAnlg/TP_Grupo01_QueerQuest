@@ -672,7 +672,7 @@ public:
 
 			ir[1] = "La aceptacion en el contexto de la comunidad LGBTQ+ implica reconocer y";
 			ir[2] = "respetar las identidades y experiencias de las personas LGBTQ+,";
-			ir[3] = "independientemente de su orientación sexual o identidad de genero.";
+			ir[3] = "independientemente de su orientacion sexual o identidad de genero.";
 
 			break;
 

@@ -23,7 +23,7 @@ private:
 			System::Console::SetCursorPosition(59, 15); std::cin >> preguntas;
 			std::cout << REINICIO;
 			system("cls");
-		} while ((preguntas < 1 || preguntas > 30));
+		} while ((std::cin.fail()||preguntas < 1 || preguntas > 30));
 
 
 		juego = new Logica(preguntas);
