@@ -10,18 +10,25 @@ private:
 
     short pt; // CANTIDAD DE pREGUNTAS DE LA tRIVIA
     char tecla; // TECLA DE INPUT
-    short random; // LIMITE DE RANDOM
     // DECLARAMOS UN VECTOR DE PUNTEROS TIPO PREGUNTA
     std::vector<Pregunta*>* vecPreguntas;
+    std::vector<bool>* noRepetir;
 
 public:
 
     Trivia(short cantidad) { // INICIALIZAMOS EL VECTOR Y RELLENAMOS EL VECTOR CON PREGUNTAS
                              //(LE DAMOS VALOR A pt CON EL ARGUMENTO cantidad)
         vecPreguntas = new std::vector<Pregunta*>;
+        noRepetir = new std::vector<bool>;
 
+        vecPreguntas->resize(30);
         for (int p = 0; p < 30; p++) {
             vecPreguntas->push_back(new Pregunta(p));
+        }
+
+        noRepetir->resize(30);
+        for (int n = 0; n < 30; n++) {
+            noRepetir->push_back(0);
         }
 
         pt = cantidad;
@@ -35,14 +42,25 @@ public:
         }
         vecPreguntas->clear();
         delete vecPreguntas;
+
+        for (int i = 0; i < noRepetir->size(); ++i) {
+            delete noRepetir->at(i);
+        }
+        noRepetir->clear();
+        delete noRepetir;
     }
 
     short preguntar() { // FUNCION PREGUNTAR
-
+        
         short r = -1;
 
         if (pt > 0) {
-            short ip = aleatorio(0, random);
+
+            short ip;
+
+            do {
+                ip = aleatorio(0, 29);
+            } while (noRepetir->at(ip));
 
             for (int t = 60; t > 0; t--) {
                 vecPreguntas->at(ip)->imprimirPregunta();
@@ -76,10 +94,9 @@ public:
             system("pause>0");
             system("cls");
             vecPreguntas->erase(vecPreguntas->begin() + ip);
+            noRepetir->at(ip) = 1;
+            pt--;
         }
-
-        pt--;
-        random--;
         return r;
     }
 
