@@ -20,13 +20,9 @@ public:
                              //(LE DAMOS VALOR A pt CON EL ARGUMENTO cantidad)
         vecPreguntas = new std::vector<Pregunta*>;
         noRepetir = new std::vector<bool>;
-
-        vecPreguntas->resize(30);
         for (int p = 0; p < 30; p++) {
             vecPreguntas->push_back(new Pregunta(p));
         }
-
-        noRepetir->resize(30);
         for (int n = 0; n < 30; n++) {
             noRepetir->push_back(0);
         }

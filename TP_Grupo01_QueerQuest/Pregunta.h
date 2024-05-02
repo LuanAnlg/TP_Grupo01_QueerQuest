@@ -323,7 +323,7 @@ public:
 			ip[1] = "Como puede contribuir la \"cisnormatividad\" a la discriminacion";
 			ip[2] = "y exclusion de las personas transgenero en la sociedad?";
 			ip[3] = ROJO;
-			ip[4] = "Q)Reforzando estereotipos de genero y limitando la aceptación de";
+			ip[4] = "Q)Reforzando estereotipos de genero y limitando la aceptacion de";
 			ip[5] = "identidades diversas.";
 			ip[6] = AMARILLO;
 			ip[7] = "W)Promoviendo la igualdad de genero y la inclusión de todas las";
