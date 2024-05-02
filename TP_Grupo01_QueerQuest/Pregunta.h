@@ -682,13 +682,13 @@ public:
 
 			ip[1] = "Que es la transfobia internalizada?";
 			ip[2] = ROJO;
-			ip[3] = "E)El rechazo hacia personas transgenero por parte de individuos";
+			ip[3] = "Q)El rechazo hacia personas transgenero por parte de individuos";
 			ip[4] = "cisgenero.";
 			ip[5] = AMARILLO;
 			ip[6] = "W)La discriminacion experimentada por personas transgenero dentro de la";
 			ip[7] = "comunidad LGBTQ+.";
 			ip[8] = AZUL;
-			ip[9] = "Q)La internalizacion de prejuicios y estigmas contra las identidades";
+			ip[9] = "E)La internalizacion de prejuicios y estigmas contra las identidades";
 			ip[10] = "transgenero por parte de personas transgenero mismas.";
 			ip[11] = GRIS;
 			ip[12] = R;
