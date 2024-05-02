@@ -12,7 +12,7 @@ private:
 	// DECLARAMOS UN VECTOR DE PUNTEROS TIPO PERSONAJE
 	std::vector<Personaje*>* vecGrupo;
 	// DECLARAMOS UN CONTADOR DE ALIADOS
-	short aliados = 0;
+	short aliados;
 
 public:
 
@@ -20,6 +20,7 @@ public:
 		
 		vecGrupo = new std::vector<Personaje*>;
 		vecGrupo->push_back(new Protagonista);
+		aliados = 0;
 	}
 
 	~Grupo() { // DESTRUCTOR CON ITERACION
