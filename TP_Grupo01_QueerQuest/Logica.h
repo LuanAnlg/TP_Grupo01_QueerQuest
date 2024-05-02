@@ -75,7 +75,7 @@ private:
         }
 
         if (AABBcolision(grupo->getProtagonista(), enemigo)) {
-            Sleep(250);
+            Sleep(500);
             enemigo->borrar();
             tr = trivia->preguntar();
             switch (tr) {
